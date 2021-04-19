@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>Blogr Landing Page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="hero-section">
+      <nav>
+        <ul class="nav-items">
+          <h1 class="brand">Blogr</h1>
+          <li class="dropdown">
+            <!-- aria-expanded needs managed with Javascript -->
+            <a href="#" class="dropdown-title">
+              Product
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu" id="sweets-dropdown">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <!-- aria-expanded needs managed with Javascript -->
+            <a href="#" class="dropdown-title">
+              Company
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu" id="sweets-dropdown">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <!-- aria-expanded needs managed with Javascript -->
+            <a href="#" class="dropdown-title">
+              Connect
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu" id="sweets-dropdown">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="sign-up-in">
+          <bitton> <a href="#">Login</a> </bitton>
+          <bitton> <a href="#">Sign Up</a> </bitton>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
+
+<!---
+
   Product
 
   Overview
@@ -92,8 +155,10 @@
   LinkedIn
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Shahriar</a>.
+    </div>
+
+-->

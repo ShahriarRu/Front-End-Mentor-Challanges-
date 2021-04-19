@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------
+--------------NAVIGATION--------------
+------------------------------------*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 8rem;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.dropdown-title {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: blue;
+  font-size: 1.125rem;
+  padding: 1rem 0.5rem;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  list-style: none;
+  background-color: rgb(243, 236, 236);
+  border-radius: 4px;
+  box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+  padding: 1em 1rem;
+  min-width: 8.5rem;
+
+  position: absolute;
+  top: calc(100% - 0.25rem);
+  left: 50%;
+  transform: translateX(-35%);
+  transform: rotateX(-90deg) translateX(-35%);
+  transform-origin: top center;
+  opacity: 0.3;
+  visibility: hidden;
+  transition: 280ms all 120ms ease-out;
+}
+
+.dropdown-menu a {
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  transform: rotateX(0) translateX(-35%);
+  visibility: visible;
+}
+
+.dropdown-menu a:hover {
+  font-weight: 600;
+}
+
+.brand {
+  margin-right: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
