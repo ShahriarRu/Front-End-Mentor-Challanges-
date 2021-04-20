@@ -19,16 +19,15 @@
       crossorigin="anonymous"
     />
     <title>Blogr Landing Page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="hero-section">
+      <!------------------Navigation------------------->
+      <div class="overlay"></div>
       <nav>
         <ul class="nav-items">
           <h1 class="brand">Blogr</h1>
           <li class="dropdown">
-            <!-- aria-expanded needs managed with Javascript -->
             <a href="#" class="dropdown-title">
               Product
               <i class="fa fa-caret-down"></i>
@@ -42,7 +41,6 @@
             </ul>
           </li>
           <li class="dropdown">
-            <!-- aria-expanded needs managed with Javascript -->
             <a href="#" class="dropdown-title">
               Company
               <i class="fa fa-caret-down"></i>
@@ -55,7 +53,6 @@
             </ul>
           </li>
           <li class="dropdown">
-            <!-- aria-expanded needs managed with Javascript -->
             <a href="#" class="dropdown-title">
               Connect
               <i class="fa fa-caret-down"></i>
@@ -68,10 +65,22 @@
           </li>
         </ul>
         <div class="sign-up-in">
-          <bitton> <a href="#">Login</a> </bitton>
-          <bitton> <a href="#">Sign Up</a> </bitton>
+          <a href="#" class="login"> Login</a>
+          <a href="#" class="btn">Sign Up</a>
         </div>
       </nav>
+      <div class="hero">
+        <div class="hero-text">
+          <h1 class="hero-main-text">A modern publishing platform</h1>
+          <p class="hero-sub-text">
+            Grow your audience and build your online brand
+          </p>
+        </div>
+        <div class="hero-btn">
+          <button class="btn btn-white">Start For Free</button>
+          <button class="btn learn">Learn More</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
