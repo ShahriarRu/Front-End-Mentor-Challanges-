@@ -15,7 +15,6 @@
   --color-white: hsl(0, 0%, 100%);
   --color-grayish-blue: hsl(240, 2%, 79%);
   --color-gray-blue: hsl(207, 13%, 34%);
-  --color-dark-blue: hsl(240, 10%, 16%);
   --grad-gray-blue: hsl(237, 17%, 21%);
   --grad-desaturated-blue: hsl(237, 23%, 32%);
   --grad-light-red: hsl(353, 100%, 62%);
@@ -32,7 +31,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 8rem 0rem 8rem;
+  margin: 0 6rem 0rem 6rem;
   padding: 1.5rem 1rem 0 1rem;
   font-family: var(--ff-ubuntu);
 }
@@ -86,6 +85,9 @@ nav {
   visibility: visible;
 }
 
+.dropdown-title:hover {
+  text-decoration: underline;
+}
 .dropdown-menu a:hover {
   font-weight: 600;
 }
@@ -188,6 +190,61 @@ nav {
 .learn:hover {
   color: var(--grad-light-red);
   background-color: var(--color-white);
+}
+
+/*------------------------------------
+--------------FEATURES--------------
+------------------------------------*/
+
+.features {
+  padding: 4rem 0 7rem 7rem;
+  font-family: var(--ff-overpass);
+  /* border: 1px solid blue; */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+  overflow-x: hidden;
+}
+
+.image {
+  grid-area: image;
+  width: 55%;
+  transform: translateX(5%);
+}
+
+.text {
+  width: 45%;
+  margin-right: 5rem;
+  line-height: 2rem;
+}
+
+.text-1,
+.text-2 {
+  margin: 5rem 0;
+}
+
+.head-text {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-dark-blue);
+}
+
+.sub-text {
+  color: var(--color-gray-blue);
+  font-weight: 300;
+}
+
+.features h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-dark-blue);
+  position: relative;
+  z-index: 100;
+  transform: translate(-5%, 120%);
+  -moz-transform: translate(-5%, 120%);
 }
 
 .attribution {
